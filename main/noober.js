@@ -22,8 +22,6 @@ function pageLoad() {
   // passenger3PickupAddressLine1, passenger3PickupAddressLine2
   // passenger3DropoffAddressLine1, passenger3DropoffAddressLine2
 
-  console.log(ride.length)
-
   if (ride.length > 1) {
     levelOfService = 'Noober Pool'
   } else if (ride[0].purpleRequested) {
@@ -35,8 +33,6 @@ function pageLoad() {
   }
 
   passenger1Name = `${ride[0].passengerDetails.first} ${ride[0].passengerDetails.last}`
-  // console.log(passenger1Name)
-
   passenger1Phone = ride[0].passengerDetails.phoneNumber
   passenger1NumberOfPassengers = ride[0].numberOfPassengers
   passenger1PickupAddressLine1 = ride[0].pickupLocation.address
